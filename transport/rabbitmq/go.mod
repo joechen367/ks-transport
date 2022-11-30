@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/go-kratos/kratos/v2 v2.5.3
-	github.com/joechen367/ks-transport v1.1.1
+	github.com/joechen367/ks-transport v1.1.3
 	github.com/joechen367/ks-transport/broker/rabbitmq v0.0.0-20221130060139-cf59e8c23cd8
 	go.opentelemetry.io/otel v1.11.1
 	go.opentelemetry.io/otel/trace v1.11.1
