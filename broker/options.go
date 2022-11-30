@@ -5,6 +5,7 @@ import (
 	"crypto/tls"
 
 	"github.com/go-kratos/kratos/v2/encoding"
+	"github.com/joechen367/ks-transport/tracing"
 )
 
 var (
@@ -25,7 +26,7 @@ type Options struct {
 
 	Context context.Context
 
-	// Tracings []tracing.Option
+	Tracings []tracing.Option
 }
 
 type Option func(*Options)

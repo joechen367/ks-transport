@@ -19,7 +19,6 @@ require (
 	go.opentelemetry.io/otel/exporters/zipkin v1.11.1 // indirect
 	go.opentelemetry.io/otel/sdk v1.11.1 // indirect
 	golang.org/x/sys v0.2.0 // indirect
-	google.golang.org/protobuf v1.28.1 // indirect
 )
 
 replace github.com/joechen367/ks-transport => ../../
