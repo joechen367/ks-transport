@@ -67,8 +67,6 @@ github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+
 github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
 github.com/grpc-ecosystem/grpc-gateway v1.16.0/go.mod h1:BDjrQk3hbvj6Nolgz8mAMFbcEtjT1g+wF4CSlocrBnw=
 github.com/imdario/mergo v0.3.12/go.mod h1:jmQim1M+e3UYxmgPu/WyfjB3N3VflVyUjjjwH0dnCYA=
-github.com/joechen367/ks-transport v1.1.3 h1:lfZZXYVnlu1rOOSFEWvSYzRADdgh+w5XPdk+weW4QL8=
-github.com/joechen367/ks-transport v1.1.3/go.mod h1:d99onRtTeCS7oQaNcBd/ShGowgYG34WheRZWTvBYVtw=
 github.com/joechen367/ks-transport/broker/rabbitmq v0.0.0-20221130060139-cf59e8c23cd8 h1:D4FCsFIKZ5D0nmMPeEGP0JKnNo7PP1zkKmzToNWEx6Q=
 github.com/joechen367/ks-transport/broker/rabbitmq v0.0.0-20221130060139-cf59e8c23cd8/go.mod h1:N23NdjAKZ66y3vo3hTavZhkaUXByycvnJRywoZfukTw=
 github.com/openzipkin/zipkin-go v0.4.1 h1:kNd/ST2yLLWhaWrkgchya40TJabe8Hioj9udfPcEO5A=

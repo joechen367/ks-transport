@@ -2,7 +2,7 @@ module github.com/joechen367/ks-transport/transport/rabbitmq
 
 go 1.19
 
-replace  github.com/joechen367/ks-transport => ../../
+replace github.com/joechen367/ks-transport => ../../
 
 require (
 	github.com/go-kratos/kratos/v2 v2.5.3
