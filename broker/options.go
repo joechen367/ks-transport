@@ -3,6 +3,8 @@ package broker
 import (
 	"context"
 	"crypto/tls"
+	"go.opentelemetry.io/otel/propagation"
+	"go.opentelemetry.io/otel/trace"
 
 	"github.com/go-kratos/kratos/v2/encoding"
 	"github.com/joechen367/ks-transport/tracing"
@@ -49,7 +51,7 @@ func NewOptions() Options {
 
 		Context: context.Background(),
 
-		// Tracings: []tracing.Option{},
+		Tracings: []tracing.Option{},
 	}
 
 	return opt
@@ -111,29 +113,29 @@ func WithTLSConfig(config *tls.Config) Option {
 	}
 }
 
-// func WithTracerProvider(provider trace.TracerProvider, tracerName string) Option {
-// 	return func(opt *Options) {
-// 		opt.Tracings = append(opt.Tracings, tracing.WithTracerProvider(provider))
-// 	}
-// }
+func WithTracerProvider(provider trace.TracerProvider, tracerName string) Option {
+	return func(opt *Options) {
+		opt.Tracings = append(opt.Tracings, tracing.WithTracerProvider(provider))
+	}
+}
 
-// func WithPropagator(propagators propagation.TextMapPropagator) Option {
-// 	return func(opt *Options) {
-// 		opt.Tracings = append(opt.Tracings, tracing.WithPropagator(propagators))
-// 	}
-// }
+func WithPropagator(propagators propagation.TextMapPropagator) Option {
+	return func(opt *Options) {
+		opt.Tracings = append(opt.Tracings, tracing.WithPropagator(propagators))
+	}
+}
 
-// func WithGlobalTracerProvider() Option {
-// 	return func(opt *Options) {
-// 		opt.Tracings = append(opt.Tracings, tracing.WithGlobalTracerProvider())
-// 	}
-// }
+func WithGlobalTracerProvider() Option {
+	return func(opt *Options) {
+		opt.Tracings = append(opt.Tracings, tracing.WithGlobalTracerProvider())
+	}
+}
 
-// func WithGlobalPropagator() Option {
-// 	return func(opt *Options) {
-// 		opt.Tracings = append(opt.Tracings, tracing.WithGlobalPropagator())
-// 	}
-// }
+func WithGlobalPropagator() Option {
+	return func(opt *Options) {
+		opt.Tracings = append(opt.Tracings, tracing.WithGlobalPropagator())
+	}
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 
