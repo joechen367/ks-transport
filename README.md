@@ -9,8 +9,3 @@
 ### 消息队列
 
 - [RabbitMQ](https://www.rabbitmq.com/)
-- [Kafka](https://kafka.apache.org/)
-- [MQTT](https://mqtt.org/)
-- [AMQP](https://www.amqp.org/)
-- [Redis](https://redis.io/)
-- [Apollo](http://activemq.apache.org/apollo)
